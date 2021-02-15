@@ -44,6 +44,7 @@ main {
     background-color: #fff;
     background-size: contain;
     float: left;
+    position: relative;
 }
 
 .card:nth-child(4),
@@ -68,7 +69,7 @@ main {
     position: relative; 
 }
 
-.card h3 {
+#start-screen {
     padding-bottom: 5px;
     font-size: 27px;
     text-shadow: 1px 1px rgb(0 0 0 / 50%);
@@ -76,6 +77,89 @@ main {
     position: absolute;
     bottom: 5px;
     left: 17%;
+}
+
+.card:nth-child(9):hover,
+.card:nth-child(4):hover {
+    background-image: url(../img/noun_Tractor_3134797.png);
+    background-color: #fff;
+    background-size: 120px;
+    background-position: 20px 20px;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+.card:nth-child(3):hover,
+.card:nth-child(6):hover {
+    background-image: url(../img/noun_air_balloon_3134741.png);
+    background-color: #fff;
+    background-size: 120px;
+    background-position: 20px 20px;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+.card:nth-child(1):hover,
+.card:nth-child(11):hover {
+    background-image: url(../img/noun_Bicycle_3134821.png);
+    background-color: #fff;
+    background-size: 120px;
+    background-position: 20px 20px;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+.card:nth-child(2):hover,
+.card:nth-child(10):hover {
+    background-image: url(../img/noun_Cruise_Ship_3134824.png);
+    background-color: #fff;
+    background-size: 120px;
+    background-position: 20px 20px;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+.card:nth-child(5):hover,
+.card:nth-child(8):hover {
+    background-image: url(../img/noun_Submarine_3134738.png);
+    background-color: #fff;
+    background-size: 120px;
+    background-position: 20px 20px;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+.card:nth-child(7):hover,
+.card:nth-child(12):hover {
+    background-image: url(../img/noun_Tram_3134750.png);
+    background-color: #fff;
+    background-size: 120px;
+    background-position: 20px 20px;
+    background-repeat: no-repeat; 
+    position: relative;
+}
+
+.card h3 {
+    padding-bottom: 5px;
+    font-size: 27px;
+    text-shadow: 1px 1px rgb(0 0 0 / 50%);
+    color: #e67937;
+    position: absolute;
+    bottom: 5px;
+    left: 17%;
+    display: none;
+}
+
+.card:nth-child(6):hover #start-screen {
+    color: #e67937;
+}
+
+.card:hover h3 {
+    display: block;
+}
+
+.card.visible h3 {
+    display: block;
 }
 
 footer h4 {
